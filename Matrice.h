@@ -9,6 +9,7 @@ private:
 	int colonne;
 public:
 	Matrice();
+    Matrice(const Matrice& m);
 	void afficher() const;
 	void remplir();
 	~Matrice();
