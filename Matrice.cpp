@@ -58,9 +58,9 @@ void Matrice::remplir()
 Matrice::~Matrice()
 {
 	for (int i = 0; i < this->ligne; i++) {
-		delete [] this->data[i];
+		delete[] this->data[i];
 		this->data[i] = nullptr;
 	}
-	delete this->data;
+	delete[] this->data;
 	this->data = nullptr;
 }
