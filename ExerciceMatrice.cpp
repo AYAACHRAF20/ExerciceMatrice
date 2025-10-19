@@ -7,7 +7,11 @@ int main()
 {
 	/*Matrice M;
 	M.remplir();
-	M.afficher();*/
+	M.afficher();
+	Matrice * M1 = new Matrice();
+	M1->remplir();
+	M1->afficher();
+	delete M1;*/
 	Matrice T[3];
 	for (int i = 0; i < 3; i++) {
 		cout << "Remplir la matrice " << i + 1 << endl;
