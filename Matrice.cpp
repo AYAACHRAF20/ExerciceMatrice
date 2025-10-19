@@ -18,6 +18,22 @@ Matrice::Matrice()
 	}
 }
 
+Matrice::Matrice(const Matrice& m)
+{
+    this->ligne = m.ligne;
+    this->colonne = m.colonne;
+	
+    this->data = new int*[ligne];
+    for(int i = 0; i < this->ligne; i++)
+    {
+        this->data[i] = new int[colonne];
+        for(int j = 0; j < this->colonne; j++)
+        {
+            this->data[i][j] = m.data[i][j]; 
+        }
+    }
+}
+
 void Matrice::afficher() const
 {
 	for (int i = 0; i < this->ligne; i++) {
